@@ -5,4 +5,5 @@ export default {
   accent: "#00224D",
   black: "#000",
   white: "#fff",
+  grey: "#808080",
 };
