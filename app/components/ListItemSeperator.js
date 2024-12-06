@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 1,
     backgroundColor: colors.lightGrey,
-    marginVertical: 10,
   },
 });
 
