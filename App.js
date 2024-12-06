@@ -5,14 +5,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AppText from "./app/components/AppText";
+import AppButton from "./app/components/AppButton";
 
 export default function App() {
-  return (
-    <WelcomeScreen />
-    //<View style={{ justifyContent: "center", alignItems: "center", flex: 1 }}>
-    //  <AppText>asd</AppText>
-    //  <Text>asd</Text>
-    //  <MaterialCommunityIcons name="email" size={60} />
-    //</View>
-  );
+  return <WelcomeScreen />;
 }
