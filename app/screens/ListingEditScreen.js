@@ -12,15 +12,15 @@ import {
 
 const validationSchema = Yup.object().shape({
   title: Yup.string().required().min(1).label("Title"),
-  price: Yup.number().required().min(1).max(10000).label("Price"),
+  price: Yup.number().required().min(1).max(100000).label("Price"),
   description: Yup.string().label("Description"),
   category: Yup.object().required().nullable().label("Category"),
 });
 
 const categories = [
-  { label: "Furniture", value: 1 },
-  { label: "Clothing", value: 2 },
-  { label: "Camera", value: 3 },
+  { label: "Playstation", value: 1 },
+  { label: "Xbox", value: 2 },
+  { label: "PC", value: 3 },
 ];
 
 function ListingEditScreen(props) {
