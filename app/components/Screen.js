@@ -1,10 +1,14 @@
 import React from "react";
 import Constants from "expo-constants";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, View, StyleSheet } from "react-native";
 
 // Funciton used to avoid status bar
-function Screen({ children }) {
-  return <SafeAreaView style={styles.screen}>{children}</SafeAreaView>;
+function Screen({ children, style, innerStyle }) {
+  return (
+    <SafeAreaView style={[styles.screen, style]}>
+      <View style={innerStyle}>{children}</View>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
