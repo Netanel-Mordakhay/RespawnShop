@@ -6,8 +6,8 @@ import {
 } from "react-native-gesture-handler";
 //import ReanimatedSwipeable from "react-native-gesture-handler/ReanimatedSwipeable";
 
-import AppText from "./AppText";
-import colors from "../config/colors";
+import AppText from "../AppText";
+import colors from "../../config/colors";
 
 function ListItem({
   title,

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 
-import ListItem from "../components/ListItem";
+import ListItem from "../components/lists/ListItem";
 import Screen from "../components/Screen";
 import colors from "../config/colors";
-import ListItemSeperator from "../components/ListItemSeperator";
-import ListItemDeleteActions from "../components/ListItemDeleteActions";
+import ListItemSeperator from "../components/lists/ListItemSeperator";
+import ListItemDeleteActions from "../components/lists/ListItemDeleteActions";
 
 // Mock data
 const initialMessages = [
