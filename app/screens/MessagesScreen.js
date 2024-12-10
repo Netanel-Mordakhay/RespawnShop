@@ -11,14 +11,15 @@ import ListItemDeleteActions from "../components/lists/ListItemDeleteActions";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title: "Hi, how are you?",
+    description:
+      "This is the message description. This is the message description. This is the message description.",
     image: require("../assets/batman.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title: "ANSWER PLEASE",
+    description: "This is the message description.",
     image: require("../assets/batman.jpg"),
   },
 ];
@@ -42,7 +43,7 @@ function MessagesScreen(props) {
         renderItem={({ item }) => (
           <ListItem
             title={item.title}
-            subTitle={item.subTitle}
+            subTitle={item.description}
             image={item.image}
             onPress={() => console.log("clicked message", item)}
             renderRightActions={() => (
