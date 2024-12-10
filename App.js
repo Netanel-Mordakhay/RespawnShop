@@ -9,7 +9,7 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 export default function App() {
   return (
     <GestureHandlerRootView style={styles.container}>
-      <MessagesScreen />
+      <ListingEditScreen />
     </GestureHandlerRootView>
   );
 }
