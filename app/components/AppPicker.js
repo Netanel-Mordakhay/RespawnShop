@@ -31,7 +31,7 @@ function AppPicker({ icon, items, placeholder, onSelectItem, selectedItem }) {
             />
           )}
           {selectedItem ? (
-            <AppText style={styles.text}>selectedItem.label</AppText>
+            <AppText style={styles.text}>{selectedItem.label}</AppText>
           ) : (
             <AppText style={styles.text}>{placeholder}</AppText>
           )}
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   },
   placeholder: {
     flex: 1,
-    color: colors.primary,
+    color: colors.grey,
   },
   text: {
     flex: 1,
